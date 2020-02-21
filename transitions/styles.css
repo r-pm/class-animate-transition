@@ -44,6 +44,8 @@ Not all of these are required to build a transition, and can be put togetherlike
   /* transition: all 300ms ease-in-out; */
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
   /* transition: all 300ms  */
+  /* dont need to use all since there is only one 
+  defined prop to transition ; bg-color*/
 }
 .box-1:hover {
   color: #eee;
