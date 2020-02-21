@@ -12,7 +12,7 @@ body {
   /* animation: change-background 1s ease infinite; */
 }
 h1 {
-  /* animation: change-text 4s ease infinite; */
+  animation: change-text 350ms ease infinite;
 }
 /* Keyframes */
 @keyframes change-background {
@@ -32,6 +32,7 @@ h1 {
   }
   50% {
     color: #b3dbd3;
+    font-size: 3em;
   }
   100% {
     color: #f4d6db;
