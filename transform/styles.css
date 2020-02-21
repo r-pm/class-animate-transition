@@ -76,7 +76,7 @@ and can be set to specifically affect the width (X-axis) or height (Y-axis). */
   transform: scaleY(2);
 }
 
-/* To combine different values for X an Y, separate them with a comma. 
+/* SCALE = ScaleX + ScaleY To combine different values for X an Y, separate them with a comma. 
 For example, transform: scale(1, 1); */
 .scale{
   transition: transform 0.5s ease;
@@ -271,7 +271,8 @@ The transform-origin property allows us to change that. */
 /* Transforming an element will also transform the element’s contents. 
 If you need to maintain the original state of a child element, 
 you can use the opposite value of your transforms on the child elements selector(s) 
-to offset the parent’s styling. */
+to offset the parent’s styling.
+add selector for child elem immed after selector:hover = hover effect on child elem only, skips parent*/
 .child{
   transform: skewX(1);
   transition: transform 0.5s ease;   
@@ -287,3 +288,6 @@ to offset the parent’s styling. */
 .box:hover .child-element{
   transform: skewX(-30deg);
 }
+
+
+/* transform should come paired w/ transitions for smooothness */
